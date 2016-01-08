@@ -4,9 +4,7 @@ http://efene.org/[Efene] plugin for http://erlang.mk/[Erlang.mk]
 
 [source,make]
 ----
-BUILD_DEPS = efene
-
-BUILD_DEPS = efene.mk
+BUILD_DEPS = efene efene.mk
 dep_efene.mk = git https://github.com/ninenines/efene.mk master
 DEP_PLUGINS = efene.mk
 
