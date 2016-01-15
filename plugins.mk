@@ -49,4 +49,7 @@ ebin/$(PROJECT).app:: $(FN_FILES) | ebin/
 		$(call efene_compile.erl,$?,$(call compat_erlc_opts_to_list,$(ERLC_OPTS))),\
 		-pa $(DEPS_DIR)/efene/ebin))
 
+efene-shell: deps
+    $(verbose) erl -run efene main shell -noshell -noinput -pa ebin/
+
 endif
