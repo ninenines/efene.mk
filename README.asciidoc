@@ -13,3 +13,5 @@ include erlang.mk
 
 The command `make` will compile all Efene files in the 'src/'
 directory.
+
+The command `make efene-shell` will open an Efene shell.
